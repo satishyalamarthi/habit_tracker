@@ -24,7 +24,7 @@
       let selected = [];
       checkboxes.forEach(cb => selected.push(cb.value));
 
-      fetch("YOUR_WEB_APP_URL", {
+      fetch("https://script.google.com/macros/s/AKfycbzLlPYXWK5RBX5Jiy5aQGeHOwqaXMsvOf9WQevI8XAPRBoETzOpHbfTa2mQCKFXeln3/exec", {
         method: "POST",
         body: JSON.stringify({ selection: selected.join(", ") })
       })
@@ -34,4 +34,5 @@
     }
   </script>
 </body>
+
 </html>
